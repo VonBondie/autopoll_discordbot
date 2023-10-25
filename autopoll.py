@@ -44,7 +44,6 @@ def saveCandidates():
 class AddCandidateModal(ui.Modal, title='候補の登録'):
   name = ui.TextInput(label='ゲーム名')
   weight = ui.TextInput(label='ゲームの重さ(軽量級:L, 中量級:M, 重量級:H)', max_length=1, min_length=1)
-  # weight = ui.select(cls=discord.ui.Select, options=weight_options)
   description = ui.TextInput(label='簡単なゲーム説明(投票時に一緒に表示されます。)')
 
   weight_transform_dict = {'L':'(軽)', 'M':"(中)", 'H':"(重)"}
